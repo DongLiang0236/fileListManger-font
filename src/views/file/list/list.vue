@@ -87,9 +87,7 @@
         data() {
             return {
                 moduleName: 'file',
-                //listMethod: 'getTerminalTree',
                 listMethod: 'queryFileList',
-                deleteMethod: 'removeThisLevelLibrary',
                 treelist:[]
             }
         },
@@ -101,7 +99,7 @@
         },
 
         watch: {}
-    }).store('otherInfo', 'userInfo').module('pager').list().build();
+    }).store('otherInfo', 'userInfo').list().build();
 </script>
 
 <style lang="scss">
